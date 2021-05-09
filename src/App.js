@@ -40,10 +40,13 @@ function App() {
   return (
     <div className="app">
       <main>
+        <div className="header">
+          <h3>Weather App</h3>
+        </div>
         <div className="search-box">
           <input 
           type="text"
-          placeholder="Search..."
+          placeholder="Search City...."
           className="search-bar"
           onChange={e => setQuery(e.target.value)}
           value={query}
